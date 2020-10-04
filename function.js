@@ -29,7 +29,27 @@ function func5(first, second=1){
 }
 func5(10);
 
+//콜백 함수
+function callTenTimes(callback){
+    for(let i =0; i<10; i++){
+        callback();
+    }
+}
+callTenTimes(function (){   //함수를 인자로 사용
+    console.log('함수 호출');
+});
 
+//익명 함수와 선언적 함수의 생성 순서
+함수 = function(){console.log("첫 번째 함수");};
+function 함수(){console.log("두 번째 함수");};
+함수();
 
+//익명함수와 화살표 함수에서의 this 키워드 차이
+(function () {
+    console.log(this);
+})();
 
+(() => {
+    console.log(this);
+})();
 
