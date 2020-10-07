@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e83c88-f477-4b02-83a9-be65a5b29612" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/async/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/threads/worker_threads.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_type.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1160">
-              <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/callback.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,14 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/async.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="140">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/threads/worker_threads.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -132,11 +132,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/async/callback-to-promise.js" />
         <option value="$PROJECT_DIR$/async/async.js" />
+        <option value="$PROJECT_DIR$/threads/worker_threads.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="714" />
+    <option name="x" value="694" />
     <option name="y" value="26" />
     <option name="width" value="1091" />
     <option name="height" value="960" />
@@ -157,7 +158,7 @@
             <path>
               <item name="javascript-node.js" type="b2602c69:ProjectViewProjectNode" />
               <item name="javascript-node.js" type="462c0819:PsiDirectoryNode" />
-              <item name="async" type="462c0819:PsiDirectoryNode" />
+              <item name="threads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,14 +196,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.async.js">
+  <component name="RunManager" selected="Node.js.worker_threads.js">
     <configuration name="async.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="async.js" working-dir="$PROJECT_DIR$/async">
       <method v="2" />
     </configuration>
     <configuration name="callback-to-promise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="callback-to-promise.js" working-dir="$PROJECT_DIR$/async">
-      <method v="2" />
-    </configuration>
-    <configuration name="callback.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/async/callback.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="promise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/async/promise.js" working-dir="$PROJECT_DIR$">
@@ -211,13 +209,16 @@
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="worker_threads.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="worker_threads.js" working-dir="$PROJECT_DIR$/threads">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.worker_threads.js" />
         <item itemvalue="Node.js.async.js" />
         <item itemvalue="Node.js.callback-to-promise.js" />
         <item itemvalue="Node.js.promise.js" />
         <item itemvalue="Node.js.server.js" />
-        <item itemvalue="Node.js.callback.js" />
       </list>
     </recent_temporary>
   </component>
@@ -232,15 +233,15 @@
       <option name="presentableId" value="Default" />
       <updated>1601704116452</updated>
       <workItem from="1601704117700" duration="6474000" />
-      <workItem from="1601896829179" duration="5052000" />
+      <workItem from="1601896829179" duration="6337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11526000" />
+    <option name="totallyTimeSpent" value="12811000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="714" y="26" width="1091" height="960" extended-state="0" />
+    <frame x="694" y="26" width="1091" height="960" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19158879" />
@@ -349,11 +350,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/async/async.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="140">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threads/worker_threads.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
