@@ -24,3 +24,16 @@ const immediate2 = setImmediate(() => {
 });
 
 clearImmediate(immediate2);
+
+process.nextTick(() => {
+    console.log('우선 실행');
+});
+
+let i = 1;
+setInterval(() => {
+    if(i++ == 5){
+        console.log('강제 종료');
+        console.exit();
+    }
+    console.log(i);
+}, 1000);
