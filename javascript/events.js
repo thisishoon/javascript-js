@@ -1,4 +1,4 @@
-const Event = require('events');
+const Event = require('javascript/events');
 
 const myEvent = new Event();
 

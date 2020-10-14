@@ -1,0 +1,28 @@
+{
+  "name": "npmtest",
+  "version": "0.0.1",
+  "description": "hello package.json",
+  "main": "app.js",
+  "dependencies": {
+    "cookie-parse": "^0.4.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisishoon/javascript-node.js.git"
+  },
+  "author": "jihoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisishoon/javascript-node.js/issues"
+  },
+  "homepage": "https://github.com/thisishoon/javascript-node.js#readme"
+}
