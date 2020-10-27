@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Login
+  p
+  | ID
+  form(method="post" action="/login")
+    input(type="text", name="id", placeholder='Your username')
+    button(type='submit') Login

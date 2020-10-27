@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    p
+    | Welcome #{name}
+    ul
+        each i in fruit
+            li=i.name
+    ul
+        each i in vegatable
+            li=i.name
